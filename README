@@ -1,0 +1,18 @@
+# EE669 Homework Assignment #1 
+# Feb 9, 2014
+# Name:  
+# ID: 
+# Email: 
+# compiled on Ubuntu 11.10(Linux 3.0.0-12-generic) with gcc(4.6.1)
+CC=gcc
+LN=gcc
+All : prob1 prob2 
+prob1 :
+	@echo “Problem 1”
+	@echo “compiling and linking the code”
+	$(CC) -c code1.c
+	$(CC) -c code2.c
+	$(LN) -o solution1 code1.o code2.o
+	@echo “Usage: solution inputImageName outputImageName”
+	solution1 foo.ppm goo.ppm
+
